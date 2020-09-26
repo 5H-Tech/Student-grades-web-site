@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="icon-1.png">
+    <script src="students.js"></script>
+    <title>Admin page</title>
+    <style>
+        body {
+            background-image: url("background.png");
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: -6px;
+            padding: 0;
+            overflow: hidden;
+            background-color: #ff9a21;
+            position: fixed;
+            width: 100%;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: #1d1561;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font: bold 20pt fantasy;
+        }
+        /* Change the link color to #111 (black) on hover */
+        
+        li a:hover {
+            background-color: #1d1561;
+            color: #ff9a21;
+        }
+        
+        button.all_button {
+            background-color: #ff9a21;
+            /* Orange */
+            color: #1d1561;
+            /* blue */
+            margin-top: 25%;
+            padding: 15px 32px;
+            font-size: 45px;
+            font: bold 3em fantasy;
+            cursor: pointer;
+        }
+        
+        .all_button:hover {
+            background-color: #1d1561;
+            color: #ff9a21;
+        }
+        
+        button.register_button {
+            margin-left: 18%;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="login as admin.html">Log out</a></li>
+            <li><a href="About.html">About</a></li>
+        </ul>
+    </ul>
+
+
+
+    <button onclick="window.location.href='RegisterPage.html'" class="all_button register_button">Register a student</button>
+    <button onclick="window.location.href='AdminPage.html'" class="all_button">Add student's marks</button>
+
+</body>
+
+</html>

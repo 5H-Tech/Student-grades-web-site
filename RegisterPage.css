@@ -1,0 +1,37 @@
+input[type=decimal],
+[type=text] {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 15px;
+    box-sizing: border-box
+}
+
+.information {
+    font: bold 1.5em fantasy;
+    color: #1d1561;
+    width: 20%;
+    border-radius: 5px;
+    background-color: rgba(255, 154, 33, 0.7);
+    padding: 40px;
+    border-radius: 60px;
+    margin-left: 35%;
+    margin-top: 5%;
+}
+.title2 {
+    font: bold 1em fantasy;
+    text-align: center;
+    color: #1d1561;
+    width: 50%;
+    font-size: 20pt;
+    padding: 14px 20px;
+    margin-left: 20%;
+    margin-top: 10%;
+    display: inline-block;
+    background-color: #ff9a21;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-sizing: border-box
+}

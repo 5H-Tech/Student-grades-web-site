@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="icon-1.png">
+    <script src="students.js"></script>
+    <title>The Home Page</title>
+    <style>
+        .slides-box {
+            min-width: 1000px;
+            width: 102%;
+            margin: 2.5% 0 -20% -1%;
+        }
+        
+        body {
+            background-image: url("background.png");
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+		
+		/*The navigation bar*/
+		
+		.navbar{
+		    overflow:hidden;
+			background-color:#ff9a21; /*orange */
+			top:0;                    /*set the position of navigation bar at the top */
+			position:fixed;           /*to set the navbar to a fixed position while scrolling*/
+			margin-left:-1%;
+			width:101%;               /*full width */
+		}
+		
+		/* links inside the navigation bar */
+		
+		.navbar a {
+            float: left;              /*position the links to the left side of the navigation bar*/
+            display: block;           /*links are displayed beside each others*/
+            color: #1d1561;           /*navy color */
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font: bold 20pt fantasy;  /*font properties */
+        }
+		
+		/*change background on mouse over*/
+        
+        .navbar a:hover {
+            background:#1d1561;
+            color:#ff9a21 ;
+        }
+        
+		
+        button.all_button {
+            background-color: #ff9a21;
+            color: #1d1561;
+            margin-top: 25%;
+            padding: 15px 32px;
+            font-size: 45px;
+            font: bold 3em fantasy;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+        
+        .all_button:hover {
+            background-color: #1d1561;
+            color: #ff9a21;
+        }
+        
+        button.register_button {
+            margin-left: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="HomePage.html">Home</a>
+        <a href="login as admin.html">Login as Admin</a>
+        <a href="LoginPage.html">Login as Student</a>
+        <a href="About.html">About</a>
+    </div>
+    <br>
+    <div class="slides-box ">
+
+        <div class="Slides">
+            <img src="slide 1.png" style="width:100%">
+        </div>
+
+        <div class="Slides">
+            <img src="slide 2.png" style="width:100%">
+        </div>
+
+        <div class="Slides">
+            <img src="slide 3.png" style="width:100%">
+        </div>
+
+    </div>
+    <br>
+    <button onclick="window.location.href='login as admin.html'" class="all_button register_button">ِِAdmin</button>
+    <button onclick="window.location.href='LoginPage.html'" class="all_button">Student</button>
+     <script>
+        moving();
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="icon-1.png">
+    <link rel="stylesheet" href="Student page.css" />
+    <script src="students.js"></script>
+    <title>Student Page</title>
+    <style>
+        body {
+            background-image: url("background.png");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100% 100%
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="LoginPage.html">Log out</a></li>
+            <li><a href="About.html">About</a></li>
+        </ul>
+    </ul>
+
+    <form class="all">
+        <div>
+            <legend style="text-align:center">Student Information</legend>
+            Username : <span id='username'></span> <br> ID : <span id='id'></span>
+        </div>
+    </form>
+    <table cellspacing="30" class="grades">
+        <tr>
+            <th>English :</th>
+            <td id="english"></td>
+            <th>Physics:</th>
+            <td id="physics"></td>
+        </tr>
+
+        <tr>
+            <th>Psychology:</th>
+            <td id="psychology"></td>
+            <th>Calculus:</th>
+            <td id="calculus"></td>
+        </tr>
+
+        <tr>
+            <th>Intro:</th>
+            <td id="intro"></td>
+            <th>Probability:</th>
+            <td id="probability"></td>
+        </tr>
+
+        <tr>
+            <th>Electronics:</th>
+            <td id="electronics"></td>
+        </tr>
+        <rt>
+            <th>percentage</th>
+            <td id="gpa"></td>
+        </rt>
+
+    </table>
+
+    <script>
+        GetStudentMarks();
+    </script>
+
+</body>
+
+</html>

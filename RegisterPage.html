@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="icon-1.png">
+	<title> Register a student </title> 
+    <link rel="stylesheet" href="Registerpage.css" />
+    <script src="students.js"></script>
+    <style>
+        body {
+            background-image: url("background.png");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100% 100%
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: -15px;
+            margin-top: -15%;
+            padding: 0;
+            overflow: hidden;
+            background-color: #ff9a21;
+            position: fixed;
+            width: 101%;
+        }
+        
+        li {
+            float: left;
+        }
+		
+		
+        
+        .title2:hover {
+            background-color:#1d1561;    /*(29,21,97);*/    /**/
+            color:#ff9a21;
+            cursor: pointer;
+        }
+        
+        p {
+            font: normal 12pt fantasy;
+        }
+        
+        li a {
+            display: block;
+            color: #1d1561;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font: bold 20pt fantasy;
+        }
+        /* Change the link color to (orange) on hover */
+        
+        li a:hover {
+            background-color: #1d1561;
+            color: #ff9a21;
+        }
+    </style>
+    <script>
+        function ValidateInput() {
+            var vUsername = document.getElementById('username').value.trim();
+            var vId = document.getElementById('id').value.trim();
+            var vPassword = document.getElementById('password').value.trim();
+
+            var patt;
+            patt = /^[a-zA-Z]+_\d+$/;
+            var b = patt.test(vUsername);
+            if (b == false) {
+                alert("please enter a valid username ");
+                return;
+            }
+            var idpatt;
+            idpatt = /^\d+$/;
+            var idb = idpatt.test(vId);
+            if (idb == false) {
+                alert("please enter a valid ID ");
+                return;
+            }
+            var passpatt;
+            passpatt = /^([A-Z]+\w+)|([A-Z]+\w+[A-Z]+)|(\w+[A-Z]+\w+)|(\w+[A-Z]+\w+[A-Z]+)$/;
+            var passb = passpatt.test(vPassword);
+            if (passb == false) {
+                alert("please enter a valid password ");
+                return;
+            }
+
+            RegisterStudent();
+        }
+    </script>
+
+</head>
+
+<body>
+    <ul>
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="login as admin.html">Log out</a></li>
+        <li><a href="AdminPage.html">To add marks</a></li>
+        <li><a href="About.html">About</a></li>
+    </ul>
+
+    <div class="information" style='margin-top:15%'>
+        <p>The user name must contain letters, underscore( _ ), and numbers</p>
+        <label class="name student">Username</label>
+        <input type="text" name="name student" placeholder="Enter the student's name" id="username">
+        <p>The ID must be only numbers</p>
+        <label class="id student">ID</label>
+        <input type="decimal" name="id student" placeholder="Enter the ID" id="id">
+        <p>The password must contain at least one capital letter</p>
+        <label class="name student">Password</label>
+        <input type="text" name="name student" placeholder="Enter the password" id="password">
+
+        <button onclick="ValidateInput()" class="title2">Register</button>
+    </div>
+
+</body>
+
+
+</html>

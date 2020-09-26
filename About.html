@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="icon-1.png">
+    <title>About Page</title>
+    <style>
+        /*Setting background*/
+        
+        body {
+            background-image: url("background.png");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+		
+        /*The navigation bar*/
+		
+		.navbar{
+		    overflow:hidden;
+			background-color:#ff9a21;  /*orange */
+			top:0;                    /*set the position of navigation bar at the top */
+			position:fixed;           /*to set the navbar to a fixed position while scrolling*/
+			margin-left:-1%;
+			width:101%;               /*full width */
+		}
+		
+		/* links inside the navigation bar */
+		
+		.navbar a {
+            float: left;              /*position the links to the left side of the navigation bar*/
+            display: block;           /*links are displayed beside each others*/
+            color:#1d1561;            /*navy color */ 
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font: bold 20pt fantasy;  /*font properties */
+        }
+		
+		/*change background on mouse over*/
+        
+        .navbar a:hover {
+            background:#1d1561;
+            color:#ff9a21;
+        }
+		
+        /*Main-content*/
+        
+        .main {
+            margin: 80px 27%;
+            background:rgba(29,21,97,0.8);               /*#1d1561;*/         /*#ff991c;*/
+            width: 50%;
+            text-align: left;
+            border-radius: 15pt;
+            padding: 20px;
+        }
+        
+        .information {
+            color: #ff991c;
+            font: bold 20pt fantasy;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #ff991c;
+            font: bold 25pt fantasy;
+        }
+        
+        ol {
+            font: bold 20pt fantasy;
+            color: #ff991c;
+            text-align: left;
+        }
+        
+        .description {
+            font: bold 20pt fantasy;
+            color:#ff991c; 
+        }
+		
+    </style>
+    <script type="text/javascript">
+    </script>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="HomePage.html">Home</a>
+        <a href="login as admin.html">Login as Admin</a>
+        <a href="LoginPage.html">Login as Student</a>
+        <a href="About.html">About</a>
+    </div>
+
+    <div class="main">
+        <h1>About Page</h1>
+        <p class="information">
+            This website has been created by a team of 6 web developers to help the students be updated with their marks.<br>
+            <ol>Our team members are:
+                <li>Hadi Ahmed Abdel Salam</li>
+				<li>Hadi Atef Sayed</li>
+                <li>Hadi Ehab Ragaa </li>
+				<li>Hani Mohamed Sayed</li>
+                <li>Haytham Mahmoud El-Sayed</li>
+                <li>Waseem Abdo Fathi</li>
+            </ol>
+        </p>
+
+        <p class="description">Description:<br>On the home page, there are two buttons; one is for the page's admin and the other is for the student.<br><br> Whether the user is an admin or a student he/she must log in first. When the admin logs in successfully he/she has two options; the
+            first option is to register a new student's data (username, ID&password) and the second one is to add a student's marks.<br><br> Note: After being logged in, the user can log out from the navigation bar at the top.<br> On the other hand, the student
+            logs in with the username and password which he/she recieved from the faculty to see his/her marks when updated.
+
+        </p>
+    </div>
+</body>
+
+</html>

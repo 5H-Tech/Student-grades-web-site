@@ -1,0 +1,76 @@
+input[type=decimal],
+[type=text] {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 15px;
+    box-sizing: border-box
+}
+
+input[type=reset] {
+    width: 40%;
+    text-align: center;
+    padding: 14px 20px;
+    background-color: #1d1561;
+    color: #ff9a21;
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    font: 20px fantasy;
+    box-sizing: border-box;
+}
+
+button[class=savebutton]:hover,
+input[type=reset]:hover {
+    background-color: orange;
+	color:#1d1561;
+}
+
+.all,
+.Id {
+    font: bold 1.5em fantasy;
+    color: #1d1561;
+    width: 20%;
+    border-radius: 5px;
+    background-color: rgba(255, 154, 33, 0.7);
+    padding: 40px;
+    border-radius: 60px;
+    margin-left: 35%;
+    margin-top: 5%;
+}
+
+.all {
+    margin-top: 18px;
+}
+
+/*The navigation bar*/
+		
+		.navbar{
+		    overflow:hidden;
+			background-color:#ff9a21;  /*orange */
+			top:0;                    /*set the position of navigation bar at the top */
+			position:fixed;           /*to set the navbar to a fixed position while scrolling*/
+			margin-left:-1%;
+			width:101%;               /*full width */
+		}
+		
+		/* links inside the navigation bar */
+		
+		.navbar a {
+            float: left;              /*position the links to the left side of the navigation bar*/
+            display: block;           /*links are displayed beside each others*/
+            color:#1d1561;            /*navy color */ 
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font: bold 20pt fantasy;  /*font properties */
+        }
+		
+		/*change background on mouse over*/
+        
+        .navbar a:hover {
+            background:#1d1561;
+            color:#ff9a21;
+        }

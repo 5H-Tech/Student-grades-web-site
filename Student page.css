@@ -1,0 +1,55 @@
+ ul {
+     list-style-type: none;
+     margin: -6px;
+     margin-top: -12.4%;
+     padding: 0;
+     overflow: hidden;
+     background-color: #ff9a21;
+     position: fixed;
+     width: 100%;
+ }
+ 
+ li {
+     float: left;
+ }
+ 
+ li a {
+     display: block;
+     color: #1d1561;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font: bold 20pt fantasy;
+ }
+ 
+ li a:hover {
+     background-color: #1d1561;
+     color: #ff9a21;
+ }
+ 
+ table.grades {
+     font: Bold 1.3em fantasy;
+     color: #1d1561;
+     background-color: rgba(255, 154, 33, 0.7);
+     padding: 4%;
+     text-align: center;
+     margin-left: 45%;
+     margin-top: -10%;
+     border-radius: 60px;
+     width: 35%;
+ }
+ 
+ .name {
+     margin-top: 20%;
+ }
+ 
+ .all {
+     font: bold 1.5em fantasy;
+     color: #1d1561;
+     width: 20%;
+     border-radius: 5px;
+     background-color: rgba(255, 154, 33, 0.7);
+     padding: 40px;
+     border-radius: 60px;
+     margin: 25% 0% -18% 0%;
+ }

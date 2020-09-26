@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="icon-1.png">
+    <title>Add marks</title>
+    <script src="students.js"></script>
+    <link rel="stylesheet" href="admin.css" />
+    <style>
+        body {
+            background-image: url("background.png");
+            background-attachment: fixed;
+            background-size: 100% 100%
+        }
+        
+        .savebutton {
+            border-radius: 20px;
+            background-color: #1d1561;
+            border-color: black;
+            color: #ff9a21;
+            margin-left: 15%;
+            margin-top: 2%;
+            margin-bottom: 1.5%;
+            padding: 15px 15px;
+            text-align: center;
+            cursor: pointer;
+            font: bold 20px fantasy;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="HomePage.html">Home</a>
+        <a href="login as admin.html">Log out</a>
+        <a href="LoginPage.html">Login as Student</a>
+        <a href="About.html">About</a>
+    </div>
+    <br>
+    <form>
+        <div class="Id">
+            <label>Student ID :</label>
+            <input type='text' placeholder="Enter student's ID" id='id'>
+        </div>
+        <div class="all">
+            <label class="subject1">English :</label>
+            <input type="decimal" name="subject1" placeholder="Enter the English Grade " id='english'>
+
+
+            <label class="subject2">Physics :</label>
+            <input type="decimal" name="subject2" placeholder="Enter the Physics Grade " id='physics'>
+
+
+            <label class="subject3">Psychology :</label>
+            <input type="decimal" name="subject3" placeholder="Enter the Psychology Grade" id='psychology'>
+
+
+            <label class="subject4">Calculus :</label>
+            <input type="decimal" name="subject4" placeholder="Enter the Calculus Grade" id='calculus'>
+
+
+            <label class="subject5">Introduction to Computer Sciences :</label>
+            <input type="decimal" name="subject5" placeholder="Enter the Introduction to Computer Sciences Grade" id='intro'>
+
+
+            <label class="subject6">Probability :</label>
+            <input type="decimal" name="subject6" placeholder="Enter The Probability Grade" id='probability'>
+
+
+
+            <label class="subject7">Electronics :</label>
+            <input type="decimal" name="subject7" placeholder="Enter The Electronics Grade" id='electronics'>
+
+            <button onclick="validmarks()" class="savebutton">Save</button>
+            <input type="reset" value="Clear">
+        </div>
+    </form>
+</body>
+
+</html>
